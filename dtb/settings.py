@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #Reset django-admin dashboard
+    'django_admin_reset',
 
     # 3rd party apps
     'django_celery_beat',
@@ -46,6 +48,9 @@ INSTALLED_APPS = [
     # local apps
     'tgbot.apps.TgbotConfig',
     'arcgis',
+    'verification',
+    'writers',
+    'clients'
 ]
 
 MIDDLEWARE = [
@@ -149,6 +154,11 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = TIME_ZONE
 CELERY_TASK_DEFAULT_QUEUE = 'default'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.freesmtpservers.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'verify@essayit.com'
+EMAIL_HOST_PASSWORD = ''
 
 
 # -----> TELEGRAM

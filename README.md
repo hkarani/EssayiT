@@ -10,7 +10,4 @@ Payments implemented in BTC
 * CSV reports
 * Payment processing in Bitcoin
 * Inbuilt task board and alert system
-* Reverse geocode of user via [ArcGis](https://www.arcgis.com/)
-* Export all users in `.csv`
-
 ----
